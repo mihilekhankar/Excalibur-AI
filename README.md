@@ -29,4 +29,7 @@
 Support: If you have any questions or need assistance, please feel free to share your queries: mihilekhankar@gmail.com
 Let's build the future of AI together!
 
+### Mock: 
+https://www.figma.com/design/wPvRwpxqFZAXJy61UObNy9/Xcalibur-AI?node-id=0-1&t=zxjlrWWMYceh6aoN-0
+
 [Preview](https://iridescent-pony-bd35ff.netlify.app/)
