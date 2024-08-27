@@ -63,7 +63,8 @@ const Main = () => {
                     </>
                     : <div className='result'>
                         <div className="result-title">
-                            <img src={assets.user_icon} alt="" />
+                            {isAuthenticated && <img className="user-pic" src={user.picture} alt={user.name} />}
+                            {/* <img src={assets.user_icon} alt="" /> */}
                             <p>{recentPrompt}</p>
                         </div>
                         <div className="result-data">
