@@ -19,7 +19,7 @@
    
 ### Future Plans:
 
-- [ ] User login integration
+- [x] User login integration
 - [ ] Chat history management
 - [ ] Response Formatting
 - [ ] Media Attachments
