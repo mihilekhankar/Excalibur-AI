@@ -2,16 +2,35 @@ import React, { useContext } from 'react'
 import './Main.css'
 import { assets } from '../../assets/assets'
 import { Context } from '../../context/context'
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Main = () => {
 
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context)
+    const { loginWithRedirect } = useAuth0();
+    const { logout } = useAuth0();
+    const { user, isAuthenticated, isLoading } = useAuth0();
 
     return (
         <div className='main'>
             <div className="nav">
-                <p>Xcalibur</p>
-                <img src={assets.user_icon} alt="" />
+                <li>
+                    <p>Xcalibur</p>
+                </li>
+                <li>
+                    {isAuthenticated && <img className="user-pic" src={user.picture} alt={user.name} />}
+                </li>
+                <li>
+                    {isAuthenticated ? (
+                        <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                            Log Out
+                        </button>
+                    ) : (
+                        <button onClick={() => loginWithRedirect()}>Log In</button>
+                    )}
+                </li>
+
+                {/* <img src={assets.user_icon} alt="" /> */}
             </div>
             <div className="main-container">
 
@@ -20,6 +39,7 @@ const Main = () => {
 
                         <div className="greet">
                             <p><span>Hello.</span></p>
+                            {isAuthenticated && <p className="user-name"> {user.name} </p>}
                             <p>How can I help you today?</p>
                         </div>
                         <div className="cards">
