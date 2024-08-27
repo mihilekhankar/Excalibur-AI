@@ -19,7 +19,7 @@
    
 ### Future Plans:
 
-- [ ] User login integration
+- [x] User login integration
 - [ ] Chat history management
 - [ ] Response Formatting
 - [ ] Media Attachments
@@ -29,4 +29,7 @@
 Support: If you have any questions or need assistance, please feel free to share your queries: mihilekhankar@gmail.com
 Let's build the future of AI together!
 
-[Preview](https://iridescent-pony-bd35ff.netlify.app/)
+### Mock: 
+https://www.figma.com/design/wPvRwpxqFZAXJy61UObNy9/Xcalibur-AI?node-id=0-1&t=zxjlrWWMYceh6aoN-0
+
+[Click Here](https://iridescent-pony-bd35ff.netlify.app/) to try.
